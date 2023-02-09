@@ -4,7 +4,7 @@
 [![goreportcard](https://goreportcard.com/badge/github.com/psyb0t/gopenai)](https://goreportcard.com/report/github.com/psyb0t/gopenai)
 [![pipeline](https://github.com/psyb0t/gopenai/actions/workflows/pipeline.yml/badge.svg)](https://github.com/psyb0t/gopenai/actions/workflows/pipeline.yml)
 
-gopenai is a package that provides bindings for the OpenAI API. It exposes a collection of interfaces for interacting with models, completions, edits, images, embeddings, files, fine tunes, and moderations.
+gopenai is an unofficial package that provides bindings for the OpenAI API. It exposes a collection of interfaces for interacting with models, completions, edits, images, embeddings, files, fine tunes, and moderations.
 
 ## Config
 
@@ -12,7 +12,7 @@ To use the package, you'll need to create a `Config` struct with your OpenAI API
 
 ```go
 cfg := Config{
-    APIKey: "YOUR_API_KEY",
+    APIKey: os.Getenv("OPENAI_API_KEY"),
     OrganizationID: "YOUR_ORGANIZATION_ID",
     RequestTimeout: time.Second * 30
 }
