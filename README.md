@@ -282,7 +282,7 @@ The `Create` method takes a `ModerationParams` struct as a parameter and returns
 ```go
 params := gopenai.ModerationParams{
     Input: "This is a string to be moderated",
-    Model: "gpt2",
+    Model: "text-moderation-stable",
 }
 
 moderation, err := moderationsAPI.Create(params)
