@@ -1,6 +1,6 @@
 # gopenai
 
-[![codecov](https://codecov.io/gh/psyb0t/gopenai/branch/master/graph/badge.svg?token=QG0NA3QE7I)](https://codecov.io/gh/psyb0t/gopenai)
+[![codecov](https://codecov.io/gh/psyb0t/gopenai/branch/master/graph/badge.svg?token=NOYS3XR0BJ)](https://codecov.io/gh/psyb0t/gopenai)
 [![goreportcard](https://goreportcard.com/badge/github.com/psyb0t/gopenai)](https://goreportcard.com/report/github.com/psyb0t/gopenai)
 [![pipeline](https://github.com/psyb0t/gopenai/actions/workflows/pipeline.yml/badge.svg)](https://github.com/psyb0t/gopenai/actions/workflows/pipeline.yml)
 
