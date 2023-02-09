@@ -155,7 +155,7 @@ The `Create` method takes an `EmbeddingParams` struct as a parameter and returns
 
 ```go
 params := gopenai.EmbeddingParams{
-    Model: "gpt2",
+    Model: "text-embedding-ada-002",
     Input: "This is a string to be embedded",
     User: "user@example.com",
 }
@@ -240,7 +240,7 @@ The `Create` method takes a `FineTuneParams` struct as a parameter and returns a
 params := gopenai.FineTuneParams{
     TrainingFile: "<training_file_id>",
     ValidationFile: "<validation_file_id>",
-    Model: "gpt2",
+    Model: "curie",
     NEpochs: 3,
     BatchSize: 16,
     LearningRateMultiplier: 0.1,
