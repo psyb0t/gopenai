@@ -117,8 +117,8 @@ The `Edit` method edits an existing image based on the given input.
 
 ```go
 params := gopenai.ImageEditParams{
-    Image: "path/to/image.jpg",
-    Mask: "path/to/mask.jpg",
+    Image: "path/to/image.png",
+    Mask: "path/to/mask.png",
     Prompt: "This is a test prompt",
     N: 10,
     Size: gopenai.ImageSize1024x1024,
@@ -135,7 +135,7 @@ The `CreateVariations` method creates variations of an existing image based on t
 
 ```go
 params := gopenai.ImageVariationParams{
-    Image: "path/to/image.jpg",
+    Image: "path/to/image.png",
     N: 10,
     Size: gopenai.ImageSize1024x1024,
     ResponseFormat: gopenai.ImageResponseFormatURL,
