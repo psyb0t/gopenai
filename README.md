@@ -4,7 +4,7 @@
 [![goreportcard](https://goreportcard.com/badge/github.com/psyb0t/gopenai)](https://goreportcard.com/report/github.com/psyb0t/gopenai)
 [![pipeline](https://github.com/psyb0t/gopenai/actions/workflows/pipeline.yml/badge.svg)](https://github.com/psyb0t/gopenai/actions/workflows/pipeline.yml)
 
-gopenai is a package for working with the OpenAI API. It provides a collection of interfaces for interacting with models, completions, edits, images, embeddings, files, fine tunes, and moderations.
+gopenai is a package that provides bindings for the OpenAI API. It exposes a collection of interfaces for interacting with models, completions, edits, images, embeddings, files, fine tunes, and moderations.
 
 ## Config
 
