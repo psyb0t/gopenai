@@ -74,6 +74,33 @@ params := CompletionParams{
 completion, err := completionsAPI.Create(params)
 ```
 
+## ChatCompletionsAPI
+
+The Chat Completions API allows you to create a chat completion.
+
+```go
+params := ChatCompletionParams{
+    Model: "gpt-3.5-turbo",
+    Messages: []ChatCompletionMessage{
+        {Role: ChatCompletionMessageRoleSystem, Content: "SYSTEM_INSTRUCTION"},
+        {Role: ChatCompletionMessageRoleUser, Content: "USER_MESSAGE"},
+    },
+    Temperature: 0.8,
+    TopP: 0.9,
+    N: 10,
+    Stop: ".",
+    PresencePenalty: 0.0,
+    FrequencyPenalty: 0.0,
+    LogitBias: map[string]interface{}{
+        "2435": -100,
+        "640": -100,
+    },
+    User: "YOUR_USER",
+}
+
+completion, err := chatCompletionsAPI.Create(params)
+```
+
 ## EditsAPI
 
 The Edits API provides methods for creating edits.

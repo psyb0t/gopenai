@@ -31,6 +31,10 @@ func (c client) Models() ModelsAPI {
 	return modelsAPI{c: c}
 }
 
+func (c client) ChatCompletions() ChatCompletionsAPI {
+	return chatCompletionsAPI{c: c}
+}
+
 func (c client) Completions() CompletionsAPI {
 	return completionsAPI{c: c}
 }

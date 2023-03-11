@@ -22,6 +22,8 @@ type Config struct {
 type Client interface {
 	// Models returns the ModelsAPI for interacting with the models.
 	Models() ModelsAPI
+	// ChatCompletions returns the ChatCompletionsAPI for interacting with chat completions.
+	ChatCompletions() ChatCompletionsAPI
 	// Completions returns the CompletionsAPI for interacting with completions.
 	Completions() CompletionsAPI
 	// Edits returns the EditsAPI for interacting with edits.

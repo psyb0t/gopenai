@@ -94,6 +94,8 @@ type CompletionParams struct {
 
 // CompletionsAPI is an interface for creating completions.
 type CompletionsAPI interface {
+	// Create generates a new completion based on the given
+	// CompletionParams and returns it as a Completion object.
 	Create(CompletionParams) (Completion, error)
 }
 
